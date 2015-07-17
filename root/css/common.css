@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* common start */
+body {
+  background: #191919;
+  font-size: 62.5%;
+  font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body:before {
+  -webkit-transition: all 1s;
+     -moz-transition: all 1s;
+       -o-transition: all 1s;
+          transition: all 1s;
+}
+
+body:after {
+  -webkit-transition: all 3s;
+     -moz-transition: all 3s;
+       -o-transition: all 3s;
+          transition: all 3s;
+}
+
+footer:after {
+  -webkit-transition: all 3s;
+     -moz-transition: all 3s;
+       -o-transition: all 3s;
+          transition: all 3s;
+}
+
+body:before,
+body:after,
+body footer:after {
+  display: block;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  width: 2000px;
+  width: 200rem;
+  height: 2000px;
+  height: 200rem;
+}
+
+.n {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nn {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nnn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+body:before {
+  background: rgba(189, 30, 30, 0.3);
+  -webkit-transform: rotate(-39.5deg);
+     -moz-transform: rotate(-39.5deg);
+      -ms-transform: rotate(-39.5deg);
+       -o-transform: rotate(-39.5deg);
+          transform: rotate(-39.5deg);
+}
+
+body:after {
+  background: rgba(189, 30, 30, 0.3);
+  -webkit-transform: rotate(-39.5deg);
+     -moz-transform: rotate(-39.5deg);
+      -ms-transform: rotate(-39.5deg);
+       -o-transform: rotate(-39.5deg);
+          transform: rotate(-39.5deg);
+}
+
+body footer:after {
+  background: rgba(189, 30, 30, 0.3);
+  -webkit-transform: rotate(-27deg);
+     -moz-transform: rotate(-27deg);
+      -ms-transform: rotate(-27deg);
+       -o-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+}
+
+body.ac:before {
+  display: block;
+  position: fixed;
+  top: -155%;
+  left: -177%;
+  width: 2000px;
+  width: 200rem;
+  height: 2000px;
+  height: 200rem;
+  content: "";
+  background: #bd1e1e;
+  -webkit-transform: rotate(-39.5deg);
+     -moz-transform: rotate(-39.5deg);
+      -ms-transform: rotate(-39.5deg);
+       -o-transform: rotate(-39.5deg);
+          transform: rotate(-39.5deg);
+}
+
+body.ac:after {
+  position: fixed;
+  top: -810px;
+  top: -81rem;
+  right: -303px;
+  right: -30.3rem;
+  display: block;
+  content: "";
+  width: 2000px;
+  width: 200rem;
+  height: 2000px;
+  height: 200rem;
+  background: rgba(189, 30, 30, 0);
+  -webkit-transform: rotate(-72.4deg);
+     -moz-transform: rotate(-72.4deg);
+      -ms-transform: rotate(-72.4deg);
+       -o-transform: rotate(-72.4deg);
+          transform: rotate(-72.4deg);
+}
+
+body.ac footer:after {
+  position: fixed;
+  bottom: -810px;
+  bottom: -81rem;
+  right: -590px;
+  right: -59rem;
+  display: block;
+  content: "";
+  width: 2000px;
+  width: 200rem;
+  height: 2000px;
+  height: 200rem;
+  background: rgba(189, 30, 30, 0);
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* common end */
