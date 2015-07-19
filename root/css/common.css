@@ -5,6 +5,10 @@ body {
   font-size: 62.5%;
   font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
   font-weight: normal;
+  height: 1000px;
+  height: 100rem;
+  padding: 20px;
+  padding: 2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -207,3 +211,16 @@ body.ac.end footer:after {
 }
 
 /* common end */
+/* header start */
+body h1 {
+  position: fixed;
+  top: 20px;
+  top: 2rem;
+  left: 20px;
+  left: 2rem;
+  color: #fff;
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+/* header end */
