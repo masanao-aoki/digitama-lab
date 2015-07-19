@@ -21,9 +21,10 @@
 
 <main role="main">
 
-	<!--<img src="./images/bg_001.png" class="n">-->
-	<img src="./images/bg_002.png" class="nn">
-	<img src="./images/bg_003.png" class="nnn">
+	<!--
+<img src="./images/bg_003.png" class="nnn">
+<img src="./images/bg_002.png" class="nn">
+	<img src="./images/bg_001.png" class="n">-->
 
 	<article>
 		<header>
@@ -56,7 +57,11 @@ $(document).ready(function() {
 	$(function(){
 	    setTimeout(function(){
 	        $('body').addClass('ac');
-	    },1000);
+		    setTimeout(function(){
+		    	$('body').addClass('end')
+		    },800);
+	    },300);
+
 	});
 });
 </script>
