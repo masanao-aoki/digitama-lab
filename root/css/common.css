@@ -1,310 +1,228 @@
 @charset "UTF-8";
+
 /* _Font icon */
 @font-face {
-  font-family: 'fontello';
-  src: url("/common/fonts/fontello.eot");
-  src: url("/common/fonts/fontello.eot#iefix") format("embedded-opentype"), url("/common/fonts/fontello.svg#fontello") format("svg"), url("/common/fonts/fontello.woff") format("woff"), url("/common/fonts/fontello.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* common start */
-body {
-  background: #191919;
-  font-size: 62.5%;
-  font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
-  font-weight: normal;
-  height: 1000px;
-  height: 100rem;
-  padding: 116px 40px 40px;
-  padding: 11.6rem 4rem 4rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'fontello';
+    src: url('/common/fonts/fontello.eot');
+    src: url('/common/fonts/fontello.eot#iefix') format('embedded-opentype'),
+         url('/common/fonts/fontello.svg#fontello') format('svg'),
+         url('/common/fonts/fontello.woff') format('woff'),
+         url('/common/fonts/fontello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-body:before,
-body:after,
+
+
+/* common start */
+body {
+	background: #191919;
+	font-size: 62.5%;
+	font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
+	font-weight: normal;
+	height: 100rem;
+	padding: 11.6rem 4rem 4rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body:before ,
+body:after ,
 footer:after {
-  -webkit-transition: all .3s;
-     -moz-transition: all .3s;
-       -o-transition: all .3s;
-          transition: all .3s;
-  display: block;
-  position: fixed;
-  z-index: -1;
-  content: "";
-  -webkit-transform-origin: 0 100%;
-     -moz-transform-origin: 0 100%;
-      -ms-transform-origin: 0 100%;
-       -o-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+	transition: all .3s;
+	display: block;
+	position: fixed;
+	z-index: -1;
+	content: "";
+	transform-origin: 0 101%;
 }
 
 body:after {
-  -webkit-transition-delay: .3s;
-     -moz-transition-delay: .3s;
-       -o-transition-delay: .3s;
-          transition-delay: .3s;
+	transition-delay: .3s;
 }
 
 footer:after {
-  -webkit-transition-delay: .1s;
-     -moz-transition-delay: .1s;
-       -o-transition-delay: .1s;
-          transition-delay: .1s;
+	transition-delay: .1s;
 }
 
-body.ac.end:before,
-body.ac.end:after,
+body.ac.end:before ,
+body.ac.end:after ,
 body.ac.end footer:after {
-  -webkit-transition: all 1s;
-     -moz-transition: all 1s;
-       -o-transition: all 1s;
-          transition: all 1s;
+	transition: all 1s;
 }
 
 body.ac.end:after {
-  -webkit-transition-delay: .1s;
-     -moz-transition-delay: .1s;
-       -o-transition-delay: .1s;
-          transition-delay: .1s;
+	transition-delay: .1s;
 }
 
 body.ac.end footer:after {
-  -webkit-transition-delay: .1s;
-     -moz-transition-delay: .1s;
-       -o-transition-delay: .1s;
-          transition-delay: .1s;
+	transition-delay: .1s;
 }
 
+
+
+
 body:before {
-  -moz-border-radius: 0;
-       border-radius: 0;
-  top: -1300px;
-  top: -130rem;
-  left: 752px;
-  left: 75.2rem;
-  width: 1300px;
-  width: 130rem;
-  height: 1300px;
-  height: 130rem;
-  background: rgba(189, 30, 30, 0);
-  border-bottom: 1px solid #bd1e1e;
-  -webkit-transform: rotate(-39.5deg);
-     -moz-transform: rotate(-39.5deg);
-      -ms-transform: rotate(-39.5deg);
-       -o-transform: rotate(-39.5deg);
-          transform: rotate(-39.5deg);
+	border-radius: 0;
+	top: -130rem;
+	left: 75.2rem;
+	width: 	130rem;
+	height: 130rem;
+	background: rgba(189,30,30,0);
+	border-bottom: 1px solid rgba(189,30,30,1);
+	transform: rotate(-39.5deg);
 }
 
 body:after {
-  top: -1700px;
-  top: -170rem;
-  right: 775px;
-  right: 77.5rem;
-  width: 1300px;
-  width: 130rem;
-  height: 1300px;
-  height: 130rem;
-  background: rgba(189, 30, 30, 0);
-  border-bottom: 1px solid #bd1e1e;
-  -webkit-transform: rotate(17.5deg);
-     -moz-transform: rotate(17.5deg);
-      -ms-transform: rotate(17.5deg);
-       -o-transform: rotate(17.5deg);
-          transform: rotate(17.5deg);
+	top: -170rem;
+	right: 77.5rem;
+	width: 	130rem;
+	height: 130rem;
+	background: rgba(189,30,30,.0);
+	border-bottom: 1px solid rgba(189,30,30,1);
+	transform: rotate(17.4deg);
 }
 
 body footer:after {
-  bottom: -930px;
-  bottom: -93rem;
-  right: -120px;
-  right: -12rem;
-  width: 1300px;
-  width: 130rem;
-  height: 1300px;
-  height: 130rem;
-  border-left: 1px solid #bd1e1e;
-  background: rgba(189, 30, 30, 0);
-  -webkit-transform: rotate(44.5deg);
-     -moz-transform: rotate(44.5deg);
-      -ms-transform: rotate(44.5deg);
-       -o-transform: rotate(44.5deg);
-          transform: rotate(44.5deg);
+	bottom: -93rem;
+	right: -12rem;
+	width: 	130rem;
+	height: 130rem;
+	border-left: 1px solid rgba(189,30,30,1);
+	background: rgba(189,30,30,0);
+	transform: rotate(44.5deg);
 }
 
+
 body.ac:before {
-  -moz-border-radius: 0;
-       border-radius: 0;
-  top: -680px;
-  top: -68rem;
-  left: 0px;
-  left: 0rem;
-  width: 1300px;
-  width: 130rem;
-  height: 1300px;
-  height: 130rem;
-  background: rgba(189, 30, 30, 0);
-  -webkit-transform: rotate(-39.5deg);
-     -moz-transform: rotate(-39.5deg);
-      -ms-transform: rotate(-39.5deg);
-       -o-transform: rotate(-39.5deg);
-          transform: rotate(-39.5deg);
+	border-radius: 0;
+	top: -68rem;
+	left: 0rem;
+	width: 	130rem;
+	height: 130rem;
+	background: rgba(189,30,30,0);
+	transform: rotate(-39.5deg);
 }
 
 body.ac.end:before {
-  background: #bd1e1e;
-  border-bottom: 1px solid rgba(189, 30, 30, 0.1);
+	background: rgba(189,30,30,1);
+	border-bottom: 1px solid rgba(189,30,30,.1);
 }
 
 body.ac:after {
-  top: -1310px;
-  top: -131rem;
-  right: -460px;
-  right: -46rem;
-  width: 1300px;
-  width: 130rem;
-  height: 1300px;
-  height: 130rem;
-  background: rgba(189, 30, 30, 0);
-  -webkit-transform: rotate(17.5deg);
-     -moz-transform: rotate(17.5deg);
-      -ms-transform: rotate(17.5deg);
-       -o-transform: rotate(17.5deg);
-          transform: rotate(17.5deg);
+	top: -131rem;
+	right: -46rem;
+	width: 	130rem;
+	height: 130rem;
+	background: rgba(189,30,30,.0);
+	transform: rotate(17.5deg);
 }
 
 body.ac.end:after {
-  background: rgba(189, 30, 30, 0.3);
-  border-bottom: 1px solid rgba(189, 30, 30, 0.1);
+	background: rgba(189,30,30,.3);
+	border-bottom: 1px solid rgba(189,30,30,.1);
 }
 
+
 body.ac footer:after {
-  bottom: -600px;
-  bottom: -60rem;
-  right: -445px;
-  right: -44.5rem;
-  width: 1300px;
-  width: 130rem;
-  height: 1300px;
-  height: 130rem;
-  background: rgba(189, 30, 30, 0);
-  -webkit-transform: rotate(44.5deg);
-     -moz-transform: rotate(44.5deg);
-      -ms-transform: rotate(44.5deg);
-       -o-transform: rotate(44.5deg);
-          transform: rotate(44.5deg);
+	bottom: -60rem;
+	right: -44.5rem;
+	width: 	130rem;
+	height: 130rem;
+	background: rgba(189,30,30,0);
+	transform: rotate(44.5deg);
 }
 
 body.ac.end footer:after {
-  background: rgba(189, 30, 30, 0.6);
-  border-left: 1px solid rgba(189, 30, 30, 0.1);
+	background: rgba(189,30,30,.6);
+	border-left: 1px solid rgba(189,30,30,.1);
 }
 
 /* common end */
+
 /* header start */
 body h1 {
-  position: fixed;
-  top: 40px;
-  top: 4rem;
-  left: 40px;
-  left: 4rem;
-  color: #fff;
-  font-size: 52px;
-  font-size: 5.2rem;
+	position: fixed;
+	top: 4rem;
+	left: 4rem;
+	color: #fff;
+	font-size: 5.2rem;
 }
-
 /* header end */
+
 /* main start */
+
 body:not(.shingle) main[role="main"] {
-  min-width: 1087px;
-  min-width: 108.7rem;
-  text-align: center;
-  letter-spacing: -.40em;
-  /* 文字間を詰めて隙間を削除する */
+	min-width: 108.7rem;
+	text-align: center;
+	letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
 }
 
 body:not(.shingle) main[role="main"] article {
-  display: inline-block;
-  width: 350px;
-  width: 35rem;
-  margin: 1px;
-  margin: .1rem;
-  padding: 20px;
-  padding: 2rem;
-  color: #fff;
-  text-align: left;
-  letter-spacing: normal;
-  /* 文字間を通常に戻す */
-  background: rgba(255, 255, 255, 0.1);
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+	display: inline-block;
+	width: 35rem;
+	margin: .1rem;
+	padding: 2rem;
+	color: #fff;
+	text-align: left;
+	letter-spacing: normal; /* 文字間を通常に戻す */
+	background: rgba(255,255,255,.1);
+	box-sizing: border-box;
 }
 
 body:not(.shingle) main[role="main"] article h2 {
-  margin: 0 0 16px;
-  margin: 0 0 1.6rem;
-  font-size: 18px;
-  font-size: 1.8rem;
+	margin: 0 0 1.6rem;
+	font-size: 1.8rem;
 }
 
 body:not(.shingle) main[role="main"] article ul {
-  display: inline-block;
-  overflow: hidden;
-  margin: 0 2px 0;
-  margin: 0 .2rem 0;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 .2rem 0;
 }
 
 body:not(.shingle) main[role="main"] article ul li {
-  float: left;
-  margin: 0 10px 0 0;
-  margin: 0 1rem 0 0;
-  list-style: none;
+	float: left;
+	margin: 0 1rem 0 0;
+	list-style: none;
 }
 
 body:not(.shingle) main[role="main"] article ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  font-size: 1.2rem;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
 }
 
 main[role="main"] article ul li a {
-  display: block;
-  padding: 4px;
-  padding: .4rem;
+	display: block;
+	padding: .4rem;
 }
 
 main[role="main"] article ul.category li a {
-  -moz-border-radius: .4rem;
-       border-radius: .4rem;
-  background: rgba(255, 255, 255, 0.3);
+	border-radius: .4rem;
+	background: rgba(255,255,255,.3);
 }
 
 main[role="main"] article ul.tag li a:before {
-  font-family: 'fontello';
-  content: '\e801';
+	font-family: 'fontello';
+	content: '\e801';
 }
 
 body:not(.shingle) main[role="main"] article figure {
-  overflow: hidden;
-  width: 300px;
-  width: 30rem;
-  height: 200px;
-  height: 20rem;
-  margin: 15px 0 20px 0;
-  margin: 1.5rem 0 2rem 0;
-  -moz-box-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.07);
-       box-shadow: 1rem 1rem 0 rgba(255, 255, 255, 0.07);
+	overflow: hidden;
+	width: 30rem;
+	height: 20rem;
+	margin: 1.5rem 0 2rem 0;
+	box-shadow: 1rem 1rem 0 rgba(255,255,255,.07);
 }
 
 body:not(.shingle) main[role="main"] article figure img {
-  width: 100%;
+	width: 100%;
 }
 
 body:not(.shingle) main[role="main"] article .text_box * {
-  font-size: 13px;
-  font-size: 1.3rem;
-  line-height: 180%;
+	font-size: 1.3rem;
+	line-height: 180%;
 }
 
 /* main end */

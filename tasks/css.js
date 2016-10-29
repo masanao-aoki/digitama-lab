@@ -1,15 +1,13 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
 
 //setting
 var settings = require('../gulpfile_settings');
 
-
 gulp.task('css', function () {
     return gulp.src(
-        [ settings.watch.css.files ],
-        { base: 'src' }
+        [ settings.watch.css.files ]
     )
     .pipe(
         postcss(
@@ -17,6 +15,6 @@ gulp.task('css', function () {
         )
     )
     .pipe(
-        gulp.dest( setting.dest.css.dir )
+        gulp.dest( settings.dest.css.dir )
     );
 });

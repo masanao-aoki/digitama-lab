@@ -3,12 +3,16 @@
     "description": "",
     "version": "1.0.0",
     "author": "bocc",
+    "dependencies": {
+        "jquery": ""
+    },
     "devDependencies": {
         "gulp": "",
         "gulp-webpack": "",
         "gulp-connect": "",
         "gulp-postcss": "",
-        "gulp-autoprefixer": "",
+        "autoprefixer": "",
+        "jsdom":"",
         "gulp-watch": "",
         "require-dir": "",
         "babel-loader": "",

@@ -34,7 +34,7 @@ footer:after {
 	position: fixed;
 	z-index: -1;
 	content: "";
-	transform-origin: 0 100%;
+	transform-origin: 0 101%;
 }
 
 body:after {
@@ -80,7 +80,7 @@ body:after {
 	height: 130rem;
 	background: rgba(189,30,30,.0);
 	border-bottom: 1px solid rgba(189,30,30,1);
-	transform: rotate(17.5deg);
+	transform: rotate(17.4deg);
 }
 
 body footer:after {
