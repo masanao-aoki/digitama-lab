@@ -11,7 +11,7 @@ gulp.task('css', function () {
     )
     .pipe(
         postcss(
-            [ autoprefixer({browsers: ['last 1 version']}) ]
+            [ autoprefixer({browsers: ['last 5 version']}) ]
         )
     )
     .pipe(

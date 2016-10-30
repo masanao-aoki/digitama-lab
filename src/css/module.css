@@ -1,31 +1,5 @@
 @charset "UTF-8";
 
-/* _Font icon */
-@font-face {
-    font-family: 'fontello';
-    src: url('/common/fonts/fontello.eot');
-    src: url('/common/fonts/fontello.eot#iefix') format('embedded-opentype'),
-         url('/common/fonts/fontello.svg#fontello') format('svg'),
-         url('/common/fonts/fontello.woff') format('woff'),
-         url('/common/fonts/fontello.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-/* common start */
-body {
-	background: #191919;
-	font-size: 62.5%;
-	font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
-	font-weight: normal;
-	height: 100rem;
-	padding: 11.6rem 4rem 4rem;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 body:before ,
 body:after ,
 footer:after {
@@ -58,9 +32,6 @@ body.ac.end:after {
 body.ac.end footer:after {
 	transition-delay: .1s;
 }
-
-
-
 
 body:before {
 	border-radius: 0;
@@ -140,89 +111,92 @@ body.ac.end footer:after {
 
 /* common end */
 
-/* header start */
-body h1 {
-	position: fixed;
-	top: 4rem;
-	left: 4rem;
-	color: #fff;
-	font-size: 5.2rem;
-}
-/* header end */
+
 
 /* main start */
 
-body:not(.shingle) main[role="main"] {
-	min-width: 108.7rem;
-	text-align: center;
-	letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+/* article
+---------------------------------------------------------- */
+.article.article-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
-
-body:not(.shingle) main[role="main"] article {
-	display: inline-block;
+.article .article-item {
 	width: 35rem;
 	margin: .1rem;
 	padding: 2rem;
+    border-radius: .4rem;
 	color: #fff;
 	text-align: left;
 	letter-spacing: normal; /* 文字間を通常に戻す */
 	background: rgba(255,255,255,.1);
 	box-sizing: border-box;
 }
-
-body:not(.shingle) main[role="main"] article h2 {
+.article .article-item .article-item-header {
 	margin: 0 0 1.6rem;
-	font-size: 1.8rem;
 }
-
-body:not(.shingle) main[role="main"] article ul {
-	display: inline-block;
+.article .article-item .article-item-header .article-item-header-title {
+    font-size: 1.8rem;
+}
+.article .article-item .article-item-list {
 	overflow: hidden;
 	margin: 0 .2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
-
-body:not(.shingle) main[role="main"] article ul li {
-	float: left;
+.article .article-item .article-item-list li {
 	margin: 0 1rem 0 0;
 	list-style: none;
 }
-
-body:not(.shingle) main[role="main"] article ul li a {
+.article .article-item .article-item-list li a {
+    display: block;
+    padding: .4rem;
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.2rem;
 }
-
-main[role="main"] article ul li a {
-	display: block;
-	padding: .4rem;
+.article .article-item .article-item-category {
+    margin: 0 0 .4rem;
+    padding: 0 0 .6rem;
+    border-bottom: .1rem dashed rgba(255,255,255,.3);
 }
 
-main[role="main"] article ul.category li a {
+.article .article-item .article-item-category li a {
 	border-radius: .4rem;
 	background: rgba(255,255,255,.3);
 }
 
-main[role="main"] article ul.tag li a:before {
+.article .article-item .article-item-tag li a:before {
+    display: inline-block;
+    padding: 0 .4rem 0 0;
 	font-family: 'fontello';
 	content: '\e801';
 }
 
-body:not(.shingle) main[role="main"] article figure {
+.article .article-item .article-item-img {
 	overflow: hidden;
-	width: 30rem;
+	width: 100%;
 	height: 20rem;
-	margin: 1.5rem 0 2rem 0;
+	margin: 1.5rem 0 1rem 0;
+    transform: translate(0,0);
+	box-shadow: 0rem 0rem 0 rgba(255,255,255,.07);
+    transition: .6s;
+}
+
+.article .article-item.js-article-hover .article-item-img {
+    transform: translate(-1rem,-1rem);
 	box-shadow: 1rem 1rem 0 rgba(255,255,255,.07);
 }
 
-body:not(.shingle) main[role="main"] article figure img {
+
+.article .article-item .article-item-img .article-item-img-src {
 	width: 100%;
 }
 
-body:not(.shingle) main[role="main"] article .text_box * {
-	font-size: 1.3rem;
-	line-height: 180%;
-}
 
-/* main end */
+.article .article-item .article-item-text * {
+	font-size: 1.3rem;
+	line-height: 2;
+}

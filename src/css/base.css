@@ -34,6 +34,14 @@ html {
 
 body {
     line-height:1;
+	background: #191919;
+	font-size: 62.5%;
+	font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
+	font-weight: normal;
+	height: 100rem;
+	padding: 11.6rem 4rem 4rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 article,aside,details,figcaption,figure,
@@ -104,4 +112,16 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+
+/* _Font icon */
+@font-face {
+    font-family: 'fontello';
+    src: url('/font/fontello.eot');
+    src: url('/font/fontello.eot#iefix') format('embedded-opentype'),
+         url('/font/fontello.svg#fontello') format('svg'),
+         url('/font/fontello.woff') format('woff'),
+         url('/font/fontello.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

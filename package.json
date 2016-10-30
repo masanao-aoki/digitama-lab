@@ -4,7 +4,8 @@
     "version": "1.0.0",
     "author": "bocc",
     "dependencies": {
-        "jquery": ""
+        "jquery": "",
+        "jquery.scroll-parallax": ""
     },
     "devDependencies": {
         "gulp": "",
@@ -12,7 +13,6 @@
         "gulp-connect": "",
         "gulp-postcss": "",
         "autoprefixer": "",
-        "jsdom":"",
         "gulp-watch": "",
         "require-dir": "",
         "babel-loader": "",
